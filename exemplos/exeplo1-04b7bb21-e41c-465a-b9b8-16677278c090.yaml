@@ -1,0 +1,28 @@
+- defaultTab: nodes
+  description: |-
+    este é um job de exemplo
+    ### job de exemplo
+
+    este job faz o seguinte:
+
+    - nada
+    - jaja vai fazer algo!
+  executionEnabled: true
+  group: exemplos
+  id: 04b7bb21-e41c-465a-b9b8-16677278c090
+  loglevel: INFO
+  name: exeplo1
+  nodeFilterEditable: false
+  plugins:
+    ExecutionLifecycle: {}
+  scheduleEnabled: true
+  sequence:
+    commands:
+    - configuration:
+        adhocRemoteString: hostname
+      nodeStep: true
+      type: exec-command
+    keepgoing: false
+    strategy: node-first
+  uuid: 04b7bb21-e41c-465a-b9b8-16677278c090
+
